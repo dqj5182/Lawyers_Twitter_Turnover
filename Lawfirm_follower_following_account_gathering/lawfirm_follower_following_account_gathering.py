@@ -6,9 +6,9 @@ import datetime
 import time
 
 # Twitter API authentication
-auth = tweepy.OAuthHandler('N9jwAo7s7bHrH1NVYwz48kYJd', 'a4x07AlrYNxWZ8pgaKQkcEQ6cvjnOrhrjv3FksA4b8UVrnhzId')
-auth.set_access_token('1034523492488830978-y6eufhKywWxaJ3DTVehO0Ee2UVe7y4',
-                      'GzBlOyfhhVs6w0WHZezTtCggePjaTw6HQT0U1dmM6jZRj')
+auth = tweepy.OAuthHandler('This can be found in Twitter developer account', 'This can be found in Twitter developer account')
+auth.set_access_token('This can be found in Twitter developer account',
+                      'This can be found in Twitter developer account')
 api = tweepy.API(auth)
 
 lawfirm_names = []
