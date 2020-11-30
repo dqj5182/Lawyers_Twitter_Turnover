@@ -1,7 +1,5 @@
-import requests
 import xlsxwriter
 import xlrd
-from bs4 import BeautifulSoup
 from collections import OrderedDict
 import tweepy
 import xlsxwriter
