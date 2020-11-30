@@ -11,7 +11,13 @@ You need to have some background in HTML to handle this code.</br>
 </br>
 The Python libraries "requests" and "BeautifulSoup" is core web-scrapping program that allows us to get full html code of a single webpage.</br>
 </br>
-When you think of a webpage that has hundreds of people's bio, you can think of about 20 people's bio in each webpage with multiple pages. Most of such webpages have multiple pages that you can select from page 1, page 2, to the end page. For each webpages that shows about 20 people's short description on their bio, you can click the short description if you want to expand it and see the full bio in a whole new webpage. We will need to consider such rules that most webpages with hundreds of people's bio have.
+When you think of a webpage that has hundreds of people's bio, you can think of about 20 people's bio in each webpage with multiple pages. Most of such webpages have multiple pages that you can select from page 1, page 2, to the end page. For each webpages that shows about 20 people's short description on their bio, you can click the short description if you want to expand it and see the full bio in a whole new webpage. We will need to consider such rules that most webpages with hundreds of people's bio have.</br>
+</br>
+The code uses such rules and web-scrap data from lawfirms' webpages. Through some for loops program will loop each bios in lawfirms' bio webpage. Then the code will scrap bio infp such as title, practice, location, bachelors, and jd degrees. The most important part of code that you need to understand is code that resembles "soup.find('span', {'class': "location"}).text.strip()" which is on the 83rd line of the code. The "soup" is entire HTML code that you have scrapped from webpage that you assigned on lawyer_link. Once you have gotten HTML code for the webpage you need, you can use find() to specify exact part of HTML code that you have received. In this case, you are trying to take specific HTML code line that has HTML tag 'span" with HTML class value of 'location'. Then you should make it as a text data in order to save it in xlsx file as text value. You can eliminate any blank spaces on the front and back of your output through strip().</br>
+</br>
+After repeating this, you can get bio info of hundreds of lawyers from hundreds of lawfirms.</br>
+</br>
+Limitation for this code is that you have to manually find each HTML tags for each info for every lawfirm which is very time consuming.
 
 ### 2) Find-a-twitter-account-of-a-lawyer-just-by-name
 This program uses Python library "tweepy", "xlsxwriter", "xlrd", and "time".</br>
