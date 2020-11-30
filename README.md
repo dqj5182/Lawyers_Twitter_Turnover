@@ -3,6 +3,15 @@
 In the management world, it is important to not only satisfy your customers, but to satisfy your hardworking employees. How well your finance and accounting group is good at keeping balance sheet intact, if your employees are not satisfied with your company, you will lose your smartest minds in your company. Therefore, it is important to analyze what makes employees lose faith on their workplace and to analyze what makes them to move from one company to another. In this project, we will touch on how use of social media affect workers to change their workplace.
 ## 2. About each files
 ### 1) Scrapping-lawyers-data-from-lawfirm-Schnader
+This program uses Python library "requests", "xlsxwriter", "xlrd", and "BeautifulSoup".</br>
+</br>
+This program is a web-scrapping program that gathers lawyers' information such as name, title, area of practice, location, bachelors degree, and j.d. degree.</br>
+</br>
+You need to have some background in HTML to handle this code.</br>
+</br>
+The Python libraries "requests" and "BeautifulSoup" is core web-scrapping program that allows us to get full html code of a single webpage.</br>
+</br>
+When you think of a webpage that has hundreds of people's bio, you can think of about 20 people's bio in each webpage with multiple pages. Most of such webpages have multiple pages that you can select from page 1, page 2, to the end page. For each webpages that shows about 20 people's short description on their bio, you can click the short description if you want to expand it and see the full bio in a whole new webpage. We will need to consider such rules that most webpages with hundreds of people's bio have.
 
 ### 2) Find-a-twitter-account-of-a-lawyer-just-by-name
 This program uses Python library "tweepy", "xlsxwriter", "xlrd", and "time".</br>
